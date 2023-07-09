@@ -6,7 +6,7 @@ import (
 )
 
 /*
-Palindrom Number: given an integer, return true if it's
+Palindrome Number: given an integer, return true if it's
 a palindrome and false otherwise. One-digit number is a palindrome.
 */
 
