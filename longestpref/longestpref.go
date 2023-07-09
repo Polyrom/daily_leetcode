@@ -6,7 +6,8 @@ import (
 )
 
 /*
- Find the longest common prefix string amongst an array of strings.
+Longest Common Prefix.
+Find the longest common prefix string amongst an array of strings.
 If there is no common prefix, return an empty string; only lowercase Eng letters
 */
 
@@ -64,7 +65,7 @@ func TestLongestCommonPrefix() {
 		g = []string{"ab", "a"}
 		h = []string{"abba", "ab", ""}
 	)
-	fmt.Println("My solution; brute force; slow & ugly")
+	fmt.Println("Longest Common Prefix. My solution; brute force; slow & ugly")
 	fmt.Println("want: fl; have:", longestCommonPrefix(a))
 	fmt.Println("want: ; have:", longestCommonPrefix(b))
 	fmt.Println("want: flower; have:", longestCommonPrefix(c))
@@ -73,7 +74,7 @@ func TestLongestCommonPrefix() {
 	fmt.Println("want: ; have:", longestCommonPrefix(f))
 	fmt.Println("want: a; have:", longestCommonPrefix(g))
 	fmt.Println("want: ; have:", longestCommonPrefix(h))
-	fmt.Println("Optimized solution; sort and compare first and last strings")
+	fmt.Println("Longest Common Prefix. Optimized solution; sort and compare first and last strings")
 	fmt.Println("want: fl; have:", longestCommonPrefixOptimized(a))
 	fmt.Println("want: ; have:", longestCommonPrefixOptimized(b))
 	fmt.Println("want: flower; have:", longestCommonPrefixOptimized(c))

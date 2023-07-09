@@ -56,7 +56,7 @@ func TestIsPalindrome() {
 	var (
 		a, b, c, d, e, f, g = 121, 2332, -171, 301203, 23455432, 1000021, 1
 	)
-	fmt.Println("My brute force solution with conversion to string")
+	fmt.Println("Palindrome Number. My brute force solution with conversion to string")
 	fmt.Println("want: true; have:", isPalindrome(a))
 	fmt.Println("want: true; have:", isPalindrome(b))
 	fmt.Println("want: false; have:", isPalindrome(c))
@@ -64,7 +64,7 @@ func TestIsPalindrome() {
 	fmt.Println("want: true; have:", isPalindrome(e))
 	fmt.Println("want: false; have:", isPalindrome(f))
 	fmt.Println("want: true; have:", isPalindrome(g))
-	fmt.Println("Optimized solution, no conv to string")
+	fmt.Println("Palindrome Number. Optimized solution, no conv to string")
 	fmt.Println("want: true; have:", isPalindromeOptimized(a))
 	fmt.Println("want: true; have:", isPalindromeOptimized(b))
 	fmt.Println("want: false; have:", isPalindromeOptimized(c))

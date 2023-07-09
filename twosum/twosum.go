@@ -41,13 +41,13 @@ func TestTwoSum() {
 	testArr3 := []int{3, 3}
 	testArr4 := []int{3, 2, 3}
 	testArr5 := []int{5, 6, 12, 22, 41, 5, 63, 14, 29, 0, 0, 1, 0}
-	fmt.Println("My solution")
+	fmt.Println("Two Sum. My solution")
 	fmt.Println("want: [2 3]; have:", twoSum(testArr1, 9))
 	fmt.Println("want: [1 2]; have:", twoSum(testArr2, 6))
 	fmt.Println("want: [0 1]; have:", twoSum(testArr3, 6))
 	fmt.Println("want: [0 2]; have:", twoSum(testArr4, 6))
 	fmt.Println("want: [4 6]; have:", twoSum(testArr5, 104))
-	fmt.Println("Optimized solution")
+	fmt.Println("Two Sum. Optimized solution")
 	fmt.Println("want: [2 3]; have:", twoSumOptimal(testArr1, 9))
 	fmt.Println("want: [1 2]; have:", twoSumOptimal(testArr2, 6))
 	fmt.Println("want: [0 1]; have:", twoSumOptimal(testArr3, 6))
