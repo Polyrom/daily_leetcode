@@ -50,7 +50,7 @@ func longestCommonPrefixOptimized(strs []string) string {
 			}
 		}
 	}
-	return longestPrefix
+	return longestPrefix 
 }
 
 func TestLongestCommonPrefix() {
@@ -64,6 +64,7 @@ func TestLongestCommonPrefix() {
 		f = []string{"jim", "jimothy", "james", "tuna"}
 		g = []string{"ab", "a"}
 		h = []string{"abba", "ab", ""}
+        i = []string{"hellllo", "hell", "h"}
 	)
 	fmt.Println("Longest Common Prefix. My solution; brute force; slow & ugly")
 	fmt.Println("want: fl; have:", longestCommonPrefix(a))
@@ -74,6 +75,7 @@ func TestLongestCommonPrefix() {
 	fmt.Println("want: ; have:", longestCommonPrefix(f))
 	fmt.Println("want: a; have:", longestCommonPrefix(g))
 	fmt.Println("want: ; have:", longestCommonPrefix(h))
+    fmt.Println("want: h; have:", longestCommonPrefix(i))
 	fmt.Println("Longest Common Prefix. Optimized solution; sort and compare first and last strings")
 	fmt.Println("want: fl; have:", longestCommonPrefixOptimized(a))
 	fmt.Println("want: ; have:", longestCommonPrefixOptimized(b))
@@ -82,4 +84,5 @@ func TestLongestCommonPrefix() {
 	fmt.Println("want: com; have:", longestCommonPrefixOptimized(e))
 	fmt.Println("want: ; have:", longestCommonPrefixOptimized(f))
 	fmt.Println("want: a; have:", longestCommonPrefixOptimized(g))
+    fmt.Println("want: h; have:", longestCommonPrefixOptimized(i))
 }
