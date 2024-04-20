@@ -1,7 +1,6 @@
 package longestpref
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -50,39 +49,5 @@ func longestCommonPrefixOptimized(strs []string) string {
 			}
 		}
 	}
-	return longestPrefix 
-}
-
-func TestLongestCommonPrefix() {
-
-	var (
-		a = []string{"flower", "flight", "flame"}
-		b = []string{"hello", "darkness", "my", "old"}
-		c = []string{"flower"}
-		d = []string{}
-		e = []string{"come", "communist", "commonwealth", "comrades"}
-		f = []string{"jim", "jimothy", "james", "tuna"}
-		g = []string{"ab", "a"}
-		h = []string{"abba", "ab", ""}
-        i = []string{"hellllo", "hell", "h"}
-	)
-	fmt.Println("Longest Common Prefix. My solution; brute force; slow & ugly")
-	fmt.Println("want: fl; have:", longestCommonPrefix(a))
-	fmt.Println("want: ; have:", longestCommonPrefix(b))
-	fmt.Println("want: flower; have:", longestCommonPrefix(c))
-	fmt.Println("want: ; have:", longestCommonPrefix(d))
-	fmt.Println("want: com; have:", longestCommonPrefix(e))
-	fmt.Println("want: ; have:", longestCommonPrefix(f))
-	fmt.Println("want: a; have:", longestCommonPrefix(g))
-	fmt.Println("want: ; have:", longestCommonPrefix(h))
-    fmt.Println("want: h; have:", longestCommonPrefix(i))
-	fmt.Println("Longest Common Prefix. Optimized solution; sort and compare first and last strings")
-	fmt.Println("want: fl; have:", longestCommonPrefixOptimized(a))
-	fmt.Println("want: ; have:", longestCommonPrefixOptimized(b))
-	fmt.Println("want: flower; have:", longestCommonPrefixOptimized(c))
-	fmt.Println("want: ; have:", longestCommonPrefixOptimized(d))
-	fmt.Println("want: com; have:", longestCommonPrefixOptimized(e))
-	fmt.Println("want: ; have:", longestCommonPrefixOptimized(f))
-	fmt.Println("want: a; have:", longestCommonPrefixOptimized(g))
-    fmt.Println("want: h; have:", longestCommonPrefixOptimized(i))
+	return longestPrefix
 }

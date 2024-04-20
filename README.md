@@ -1,4 +1,4 @@
-**Daily Leetcode Challenge**
+# Daily Leetcode Challenge
 
 So basic...
 
