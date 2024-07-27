@@ -10,9 +10,7 @@
 
 
 def merge(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
-    """
-    Do not return anything, modify nums1 in-place instead.
-    """
+    """Do not return anything, modify nums1 in-place instead."""
     i, j = m - 1, n - 1
     k = m + n - 1
     while j >= 0:
