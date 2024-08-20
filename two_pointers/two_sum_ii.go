@@ -14,21 +14,17 @@ package two_pointers
 
 // Time: O(n). Memory: O(1)
 func twoSum(numbers []int, target int) []int {
-	result := make([]int, 2)
 	var left, right = 0, len(numbers) - 1
-	for left <= right {
+	for left < right {
 		sum := numbers[left] + numbers[right]
 		if sum == target {
-			result[0] = left + 1
-			result[1] = right + 1
-			return result
+			return []int{left + 1, right + 1}
 		}
-		if sum < target || right-left == 1 {
+		if sum < target {
 			left++
-			right = len(numbers) - 1
-			continue
+		} else {
+			right--
 		}
-		right--
 	}
-	return result
+	return []int{}
 }
